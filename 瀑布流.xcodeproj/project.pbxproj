@@ -15,6 +15,7 @@
 		CFBAC0C820088D1A00D76292 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CFBAC0C720088D1A00D76292 /* main.m */; };
 		CFBAC0D220088D1A00D76292 /* ___Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = CFBAC0D120088D1A00D76292 /* ___Tests.m */; };
 		CFBAC0DD20088D1B00D76292 /* ___UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CFBAC0DC20088D1B00D76292 /* ___UITests.m */; };
+		CFBAC0EC20088D5C00D76292 /* WaterLayou.m in Sources */ = {isa = PBXBuildFile; fileRef = CFBAC0EB20088D5C00D76292 /* WaterLayou.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		CFBAC0D820088D1B00D76292 /* 瀑布流UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "瀑布流UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFBAC0DC20088D1B00D76292 /* ___UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "___UITests.m"; sourceTree = "<group>"; };
 		CFBAC0DE20088D1B00D76292 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CFBAC0EA20088D5C00D76292 /* WaterLayou.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WaterLayou.h; sourceTree = "<group>"; };
+		CFBAC0EB20088D5C00D76292 /* WaterLayou.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WaterLayou.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +84,8 @@
 		CFBAC0AC20088D1A00D76292 = {
 			isa = PBXGroup;
 			children = (
+				CFBAC0EA20088D5C00D76292 /* WaterLayou.h */,
+				CFBAC0EB20088D5C00D76292 /* WaterLayou.m */,
 				CFBAC0B720088D1A00D76292 /* 瀑布流 */,
 				CFBAC0D020088D1A00D76292 /* 瀑布流Tests */,
 				CFBAC0DB20088D1B00D76292 /* 瀑布流UITests */,
@@ -265,6 +270,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFBAC0EC20088D5C00D76292 /* WaterLayou.m in Sources */,
 				CFBAC0BD20088D1A00D76292 /* ViewController.m in Sources */,
 				CFBAC0C820088D1A00D76292 /* main.m in Sources */,
 				CFBAC0BA20088D1A00D76292 /* AppDelegate.m in Sources */,

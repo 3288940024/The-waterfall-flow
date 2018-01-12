@@ -7,22 +7,35 @@
 //
 
 #import "ViewController.h"
+#import "WaterLayou.h"
 
-@interface ViewController ()
+@interface ViewController () <UICollectionViewDataSource>
 
 @end
 
 @implementation ViewController
 
+static NSString *reuseId = @"cell";
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    WaterLayou *layou = [[WaterLayou alloc] init];
+    UICollectionView *collect = [[UICollectionView alloc] initWithFrame:self.view.bounds collectionViewLayout:layou];
+    collect.dataSource = self;
+    [self.view addSubview:collect];
+    
+    [collect registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:reuseId];
 }
 
+#pragma mark ~~~~~~~~~~ CollectionViewDataSource ~~~~~~~~~~
+- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
+    return 100;
+}
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
+    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseId forIndexPath:indexPath];
+    cell.contentView.backgroundColor = [UIColor redColor];
+    return cell;
 }
 
 
